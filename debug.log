@@ -1,0 +1,238 @@
+Fri, 17 Jun 2022 03:02:33 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:02:37 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:02:49 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:03:06 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:03:06 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:03:06 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 03:04:19 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 03:04:24 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 03:06:54 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:06:58 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:07:13 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:07:31 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:07:31 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:07:31 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 03:08:51 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 03:08:56 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 03:09:17 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:09:21 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:09:32 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:09:43 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:09:43 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:09:43 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 03:10:53 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 03:10:57 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 03:10:57 GMT : (FILE) Deleting raw_data.nc.gz 
+Fri, 17 Jun 2022 03:21:11 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:21:15 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:21:26 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:21:36 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:22:23 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:22:27 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:22:37 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:22:48 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:22:48 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:23:30 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:23:35 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:23:49 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:24:02 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:24:02 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:24:41 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:24:46 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:24:54 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:25:02 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:25:02 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:25:20 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:25:23 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:25:31 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:25:39 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:25:39 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:26:03 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:26:07 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:26:15 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:26:25 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:26:25 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:27:00 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:27:03 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:27:12 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:27:24 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:27:24 GMT : (Connection) Closing FTP Connection 
+Fri, 17 Jun 2022 03:30:37 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:30:42 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:30:51 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:30:59 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:31:08 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:31:11 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:31:19 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:31:27 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:34:03 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:34:08 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:34:19 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:34:30 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:36:37 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:36:42 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:36:55 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:37:05 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:38:11 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:38:16 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:38:26 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:38:35 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:40:36 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:40:41 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:40:48 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:40:59 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:41:22 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:41:25 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:41:33 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:41:46 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:42:37 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:42:38 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:43:22 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:43:23 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:43:50 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:43:51 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:44:28 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:44:29 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:46:06 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:46:13 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:46:13 GMT : (DONE) FTP Connection Closed 
+Fri, 17 Jun 2022 03:46:13 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:46:30 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:46:30 GMT : (DONE) FTP Connection Closed 
+Fri, 17 Jun 2022 03:46:30 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:47:03 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:47:05 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:47:12 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:47:13 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:47:13 GMT : (DONE) FTP Connection Closed 
+Fri, 17 Jun 2022 03:47:25 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:47:30 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:47:31 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:47:31 GMT : (DONE) FTP Connection Closed 
+Fri, 17 Jun 2022 03:47:40 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:48:16 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:48:17 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:48:30 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:48:43 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:48:47 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:48:57 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:49:06 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:49:14 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:52:14 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:52:18 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:52:26 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:52:35 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:52:47 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:53:01 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:53:04 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:53:16 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:53:28 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:53:37 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:54:48 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:54:53 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:55:01 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:55:09 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:55:24 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:55:31 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:55:34 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:55:46 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:55:59 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:56:10 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 03:56:41 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:56:45 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:57:02 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:57:05 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:57:14 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:57:28 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 03:57:31 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 03:57:39 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 03:57:47 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 03:58:00 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:02:37 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 04:02:42 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 04:02:52 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 04:03:03 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 04:03:12 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:04:16 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 04:04:21 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 04:04:28 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 04:04:37 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 04:04:45 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:05:01 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 04:05:04 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 04:05:12 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 04:05:26 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 04:05:33 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:06:57 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 04:07:02 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 04:07:10 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 04:07:22 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 04:07:31 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:07:45 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 04:07:49 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 04:08:00 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 04:08:11 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 04:08:21 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:08:21 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 04:09:12 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 04:09:17 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 04:09:17 GMT : (FILE) Deleting raw_data.nc.gz 
+Fri, 17 Jun 2022 04:09:17 GMT : (DONE)  
+Fri, 17 Jun 2022 04:14:00 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 04:14:05 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 04:14:21 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 04:14:33 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 04:14:44 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:14:44 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 04:15:08 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 04:15:13 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220616_20220620.tif 
+Fri, 17 Jun 2022 04:15:24 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220616_20220625.tif 
+Fri, 17 Jun 2022 04:15:33 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220616_20220630.tif 
+Fri, 17 Jun 2022 04:15:41 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 04:15:41 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 04:16:22 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 04:16:27 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 04:16:27 GMT : (FILE) Deleting raw_data.nc.gz 
+Fri, 17 Jun 2022 04:16:27 GMT : (DONE)  
+Fri, 17 Jun 2022 16:50:39 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 16:50:44 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220617_20220621.tif 
+Fri, 17 Jun 2022 16:50:55 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220617_20220626.tif 
+Fri, 17 Jun 2022 16:51:05 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220617_20220701.tif 
+Fri, 17 Jun 2022 16:51:16 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 16:51:16 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 16:52:18 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 16:52:22 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 16:52:22 GMT : (FILE) Deleting raw_data.nc.gz 
+Fri, 17 Jun 2022 16:52:22 GMT : (DONE)  
+Fri, 17 Jun 2022 16:53:46 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 16:53:50 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220617_20220621.tif 
+Fri, 17 Jun 2022 16:53:58 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220617_20220626.tif 
+Fri, 17 Jun 2022 16:54:09 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220617_20220701.tif 
+Fri, 17 Jun 2022 16:54:19 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 16:54:19 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 16:55:14 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 16:55:19 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 16:55:19 GMT : (FILE) Deleting raw_data.nc.gz 
+Fri, 17 Jun 2022 16:55:19 GMT : (DONE)  
+Fri, 17 Jun 2022 16:55:19 GMT : (RScript) Starting R Script 
+Fri, 17 Jun 2022 16:55:19 GMT : (RScript) Done R Script 
+Fri, 17 Jun 2022 16:56:39 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 16:56:44 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220617_20220621.tif 
+Fri, 17 Jun 2022 16:56:57 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220617_20220626.tif 
+Fri, 17 Jun 2022 16:57:05 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220617_20220701.tif 
+Fri, 17 Jun 2022 16:57:12 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 16:57:12 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 16:57:56 GMT : (ZIP) Start Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 16:58:00 GMT : (ZIP) Done Unziping raw_data.nc.gz 
+Fri, 17 Jun 2022 16:58:00 GMT : (FILE) Deleting raw_data.nc.gz 
+Fri, 17 Jun 2022 16:58:01 GMT : (DONE)  
+Fri, 17 Jun 2022 16:58:01 GMT : (RScript) Starting R Script 
+Fri, 17 Jun 2022 16:58:01 GMT : (RScript) Error running R Script 
+Fri, 17 Jun 2022 16:59:11 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 16:59:16 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220617_20220621.tif 
+Fri, 17 Jun 2022 16:59:23 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220617_20220626.tif 
+Fri, 17 Jun 2022 16:59:33 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean/data-mean_20220617_20220701.tif 
+Fri, 17 Jun 2022 16:59:41 GMT : (Connection) FTP Connection Closed 
+Fri, 17 Jun 2022 16:59:41 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
+Fri, 17 Jun 2022 17:00:26 GMT : (ZIP) Start Unziping Data/raw_data.nc.gz 
+Fri, 17 Jun 2022 17:00:31 GMT : (ZIP) Done Unziping Data/raw_data.nc.gz 

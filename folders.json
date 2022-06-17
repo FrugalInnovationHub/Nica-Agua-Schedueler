@@ -1,0 +1,23 @@
+{
+  "shortTerm": {
+    "host": "ftp.chc.ucsb.edu",
+    "files": [
+      {
+        "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean",
+        "destination": "Data/5 day.tif"
+      },
+      {
+        "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean",
+        "destination": "Data/10 day.tif"
+      },
+      {
+        "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean",
+        "destination": "Data/15 day.tif"
+      }
+    ]
+  },
+  "longTerm": {
+    "source": "http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz",
+    "destination": "Data/raw_data.nc.gz"
+  }
+}
