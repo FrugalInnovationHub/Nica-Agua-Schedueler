@@ -1,5 +1,8 @@
 const schedule = require("node-schedule");
-const task =require("./task")
-const job = schedule.scheduleJob("15 21 * * *", function () {
+const fileLog = require("./fileLog")
+fileLog("Schedueler","Initializing Schedueler");
+
+const job = schedule.scheduleJob("* */15 * * *", function () {
+  fileLog("Schedueler","Starting Job");
   require('child_process').fork('./task.js');
 });

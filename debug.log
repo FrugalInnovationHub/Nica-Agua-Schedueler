@@ -236,3 +236,10 @@ Fri, 17 Jun 2022 16:59:41 GMT : (Connection) FTP Connection Closed
 Fri, 17 Jun 2022 16:59:41 GMT : (Downloading) http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz 
 Fri, 17 Jun 2022 17:00:26 GMT : (ZIP) Start Unziping Data/raw_data.nc.gz 
 Fri, 17 Jun 2022 17:00:31 GMT : (ZIP) Done Unziping Data/raw_data.nc.gz 
+Fri, 17 Jun 2022 17:11:49 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 17:11:54 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220617_20220621.tif 
+Fri, 17 Jun 2022 17:12:00 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 17:12:10 GMT : (Connection) FTP Connection Stablished 
+Fri, 17 Jun 2022 17:12:13 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean/data-mean_20220617_20220621.tif 
+Fri, 17 Jun 2022 17:12:25 GMT : (Downloading) pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean/data-mean_20220617_20220626.tif 
+Fri, 17 Jun 2022 17:13:29 GMT : (Schedueler) Initializing Schedueler 
