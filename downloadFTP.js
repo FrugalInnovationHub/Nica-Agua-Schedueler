@@ -28,7 +28,7 @@ function donwloadFtp(){
             fileLog("Downloading", `${source}/${name}`);
             if (err) throw err;
             stream.once("close", function () {});
-            stream.pipe(fs.createWriteStream(`${destination}`));
+            stream.pipe(fs.createWriteStream(`${__dirname}/${destination}`));
             resolve();
             });
         });
