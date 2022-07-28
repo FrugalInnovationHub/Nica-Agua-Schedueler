@@ -41,9 +41,8 @@ seasons <- c("JFM","FMA","MAM","AMJ","MJJ","JJA","JAS","ASO","SON","OND","NDJ","
 # datadir <- file.path("Z:/projects/nicaragua/hydroclimate/seasonal_prediction/R-fcst")
 #datadir <- file.path("C:/Users/Ed/Documents/projects/hydroclimate/seasonal_prediction/data")
 
-datadir <- file.path("./")
+datadir <- file.path("./Data")
 mf <- file.path(datadir, "raw_data.nc")
-
 #check downloaded data file for size and download date
 
 
@@ -63,7 +62,7 @@ nc <- nc_open(mf)
 #atts <- ncatt_get(nc, attributes(nc$var)$names[1])
 
 #' Find date most recent forecast was issued
-fcstdates <- nc[['dim']]$F$vals
+fcstdates <- nc[['dim']]$F$vals 
 fcstdateunits <- nc[['dim']]$F$units
 tstr <- unlist(strsplit(fcstdateunits, " ")[1]) #units ("months since YYYY-MM-DD)
 if(tolower(tstr[1]) != "months") {
