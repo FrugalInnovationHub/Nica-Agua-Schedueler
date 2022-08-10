@@ -1,0 +1,23 @@
+The Linux Environment needs a lot of instalations to work:
+1)  Update apt
+    apt-get update
+2)  Debian GIZ
+    apt-get install ...
+
+3)  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+    sudo apt-get update
+    sudo apt-get install libgdal-dev libgeos-dev libproj-dev 
+
+4) Install Node
+
+5) Update Node
+
+6) Install Pm2
+
+5) Checkout Schedueler repository
+
+6) Change Permission of the download script to executable
+
+7) Run the script
+
+6) Run the Schedueler
