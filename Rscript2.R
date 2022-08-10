@@ -1,7 +1,10 @@
 # **Modify for your System**
 setwd("./Data") ## Modify for your system
-library(terra)
-library(writexl)
+# library(terra)
+# library(writexl)
+if (!require("terra")) install.packages("terra")
+if (!require("writexl")) install.packages("writexl")
+
 #------------------------------------------------------------------------------------------------------------------
 # Community Data
 cLonCoord = c(-86.2621555581,-86.27143686,-86.28678731,-86.283059370199993,
