@@ -104,7 +104,7 @@ for (i in 1:length(cLonCoord)) {
 #------------------------------------------------------------------------------------------------------------------
   #5 Day
   # Load file 1 using terra::rast and plot contents
-  r5 = terra::rast('./5 Day.tif') # AUTO DOWNLOAD HERE
+  r5 = terra::rast('./5 day.tif') # AUTO DOWNLOAD HERE
   # Use defined projection for lon/lat coordinates
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r5) = crsdef
@@ -115,7 +115,7 @@ for (i in 1:length(cLonCoord)) {
   #------------------------------------------------------------------------------------------------------------------
   #10 Day
   # Load file 2 using terra::rast and plot contents
-  r10 = terra::rast('./10 Day.tif') # AUTO DOWNLOAD HERE
+  r10 = terra::rast('./10 day.tif') # AUTO DOWNLOAD HERE
   # Use defined projection for lon/lat coordinates
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r10) = crsdef
@@ -126,7 +126,7 @@ for (i in 1:length(cLonCoord)) {
   #------------------------------------------------------------------------------------------------------------------
   #15 Day
   # Load file 3 using terra::rast and plot contents
-  r15 = terra::rast('./15 Day.tif') #AUTO DOWNLOAD HERE
+  r15 = terra::rast('./15 day.tif') #AUTO DOWNLOAD HERE
   # Use defined projection for lon/lat coordinates
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r15) = crsdef
