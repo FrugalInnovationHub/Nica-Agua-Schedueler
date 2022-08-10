@@ -21,7 +21,7 @@ community = c('El Bramadero','Daraili','La Laguna','San Andres','Las Limas',
               'El Naranjo','Los Planes','El Robledalito','Varonesa',
               'La Palmera')
 #------------------------------------------------------------------------------------------------------------------
-r = terra::rast('IRI_prob_fcst_lead_1.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('./IRI_prob_fcst_lead_1.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
@@ -40,7 +40,7 @@ for (i in 1:length(cLonCoord)) {
   df.seasA = rbind(df.seasA,dfA)
 }
 #------------------------------------------------------------------------------------------------------------------
-r = terra::rast('IRI_prob_fcst_lead_2.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('./IRI_prob_fcst_lead_2.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
@@ -59,7 +59,7 @@ for (i in 1:length(cLonCoord)) {
   df.seasB = rbind(df.seasB,dfB)
 }
 #------------------------------------------------------------------------------------------------------------------
-r = terra::rast('IRI_prob_fcst_lead_3.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('./IRI_prob_fcst_lead_3.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
@@ -78,7 +78,7 @@ for (i in 1:length(cLonCoord)) {
   df.seasC = rbind(df.seasC,dfC)
 }
 #---------------------------------------------------------------------------------------
-r = terra::rast('IRI_prob_fcst_lead_4.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('./IRI_prob_fcst_lead_4.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
