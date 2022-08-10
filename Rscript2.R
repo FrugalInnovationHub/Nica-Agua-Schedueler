@@ -2,8 +2,8 @@
 setwd("./Data") ## Modify for your system
 # library(terra)
 # library(writexl)
-if (!require("terra")) install.packages("terra")
 if (!require("writexl")) install.packages("writexl")
+if (!require("terra")) install.packages("terra")
 
 #------------------------------------------------------------------------------------------------------------------
 # Community Data
