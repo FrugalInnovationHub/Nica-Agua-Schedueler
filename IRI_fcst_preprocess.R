@@ -107,7 +107,7 @@ for (lead in leads) {
   tmp.def <- ncvar_def(varname, units, list(londim, latdim, tercdim), fillvalue, 
                        dlname, prec = "single")
   # create a netCDF file 
-  ncfname <- paste0("IRI_prob_fcst_", as.character(fcstdate),"_lead_",lead,".nc")
+  ncfname <- paste0("IRI_prob_fcst_lead_",lead,".nc")
   ncout <- nc_create(ncfname, list(tmp.def))
   # put the array into the file
   ncvar_put(ncout, tmp.def, fcst)
