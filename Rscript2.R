@@ -140,7 +140,7 @@ for (i in 1:length(cLonCoord)) {
   allForecasts = data.frame(Days = (5*c(1:3)), X = (allForecasts))
   colnames(allForecasts) = c('# Days','rainfall mm') 
   #------------------------------------------------------------------------------------------------------------------
-  r = terra::rast('Historical.nc') # AUTO DOWNLOAD HERE
+  r = terra::rast('./Historical.nc') # AUTO DOWNLOAD HERE
   #------------------------------------------------------------------------------------------------------------------
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r) = crsdef
