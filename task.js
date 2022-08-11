@@ -11,7 +11,7 @@ downloadFtp().then(() => {
         .then()
         .catch(() => {
           filelog("Error", "Error running R Script");
-        });
+        }).catch((e) => filelog(e));
     });
   });
 });
