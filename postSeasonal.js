@@ -3,6 +3,7 @@ const reader = require("xlsx");
 const moment = require("moment");
 var request = require("request");
 const filelog = require("./fileLog");
+const url = "api.nicaagua.net"
 // Reading our test file
 
 /**Class that describes the Seasonal Forecast object */
@@ -47,7 +48,7 @@ function login() {
   filelog("API", "LOGIN");
   var options = {
     method: "POST",
-    url: "https://localhost:3000/user/login",
+    url: `${url}/login`,
     body: JSON.stringify({ phoneNumber: "7", password: "123" }),
     headers: {
       "Content-Type": "application/json",
@@ -70,7 +71,7 @@ function putLongTermForecasts() {
         filelog("API", "PUTING DATA");
         var options = {
           method: "PUT",
-          url: "https://localhost:3000/longTerm",
+          url: `${url}/longTerm`,
           body: data,
           headers: {
             "Content-Type": "application/json",
