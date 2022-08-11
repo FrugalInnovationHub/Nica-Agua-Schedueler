@@ -3,7 +3,10 @@
     "cron": "^2.0.0",
     "ftp": "^0.3.10",
     "gunzip-file": "^0.1.1",
+    "moment": "^2.29.4",
     "node-schedule": "^2.1.0",
-    "r-integration": "^2.3.0"
+    "r-integration": "^2.3.0",
+    "request": "^2.88.2",
+    "xlsx": "^0.18.5"
   }
 }
