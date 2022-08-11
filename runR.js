@@ -5,7 +5,7 @@ function runRScript() {
   return new Promise((resolve, reject) => {
     try {
       fileLog("RScript","Starting R Script")
-      R.executeRScript("./IRI_fcst_preprocess.R");
+      R.executeRScript("./Rscript2.R");
       fileLog("RScript","Done R Script")
       resolve();
     } catch (e) {
