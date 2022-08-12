@@ -1,17 +1,17 @@
-const R = require("r-integration");
 fileLog = require("./fileLog");
+const { exec } = require("child_process");
 
 function runRScript() {
   return new Promise((resolve, reject) => {
-    try {
-      fileLog("RScript","Starting R Script")
-      R.executeRScript("./Rscript2.R");
-      fileLog("RScript","Done R Script")
-      resolve();
-    } catch (e) {
-      fileLog("RScript","Error running R Script")
-      reject();
-    }
+    exec("Rscript Rscript2.R", (error, stdout, stderr) => {
+      if (error) {
+        reject(`error: ${error.message}`);
+      }
+      if (stderr) {
+        resolve(`stderr: ${stderr}`);
+      }
+      resolve(`stdout: ${stdout}`);
+    });
   });
 }
 

@@ -6,12 +6,8 @@ const filelog = require("./fileLog");
 
 downloadFtp().then(() => {
   downloadZip().then(() => {
-    runRScript().then(() => {
-      putLongTermForecasts()
-        .then()
-        .catch(() => {
-          filelog("Error", "Error running R Script");
-        }).catch((e) => filelog(e));
+    runRScript().then((e) => {
+      putLongTermForecasts();
     });
   });
 });

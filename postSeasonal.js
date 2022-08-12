@@ -3,7 +3,7 @@ const reader = require("xlsx");
 const moment = require("moment");
 var request = require("request");
 const filelog = require("./fileLog");
-const url = "api.nicaagua.net"
+const url = "https://api.nicaagua.net"
 // Reading our test file
 
 /**Class that describes the Seasonal Forecast object */
@@ -48,7 +48,7 @@ function login() {
   filelog("API", "LOGIN");
   var options = {
     method: "POST",
-    url: `${url}/login`,
+    url: `${url}/user/login`,
     body: JSON.stringify({ phoneNumber: "7", password: "123" }),
     headers: {
       "Content-Type": "application/json",
@@ -57,9 +57,12 @@ function login() {
 
   return new Promise((resolve, reject) => {
     request(options, function (error, response) {
-      if (error) reject(error);
-      filelog("API", "LOGIN SUCCESS");
-      resolve(response.body);
+      if(response.statusCode != 200 || error)
+        reject("error");
+      else{
+        filelog("API", "LOGIN SUCCESS");
+        resolve(response.body);
+      }
     });
   });
 }
@@ -83,6 +86,8 @@ function putLongTermForecasts() {
           filelog("API", "SUCCESS");
           resolve();
         });
+      }).catch((e) => {
+        filelog("API", "LOGIN ERROR");
       });
     });
   });
