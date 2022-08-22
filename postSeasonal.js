@@ -3,6 +3,7 @@ const reader = require("xlsx");
 const moment = require("moment");
 var request = require("request");
 const filelog = require("./fileLog");
+const login = require("./apiLogin");
 const url = "https://api.nicaagua.net"
 // Reading our test file
 
@@ -43,30 +44,6 @@ function readSpreadSheet() {
   });
 }
 
-function login() {
-  process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
-  filelog("API", "LOGIN");
-  var options = {
-    method: "POST",
-    url: `${url}/user/login`,
-    body: JSON.stringify({ phoneNumber: "7", password: "123" }),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  };
-
-  return new Promise((resolve, reject) => {
-    request(options, function (error, response) {
-      if(response.statusCode != 200 || error)
-        reject("error");
-      else{
-        filelog("API", "LOGIN SUCCESS");
-        resolve(response.body);
-      }
-    });
-  });
-}
-
 function putLongTermForecasts() {
   return new Promise((resolve, reject) => {
     return readSpreadSheet().then((data) => {
@@ -92,5 +69,7 @@ function putLongTermForecasts() {
     });
   });
 }
+
+putLongTermForecasts();
 
 module.exports = putLongTermForecasts;

@@ -171,13 +171,30 @@ for (i in 1:length(cLonCoord)) {
   ThreeDaySequence = seq(CDV+2, ncol(historicalData), by = 365)
   FourDaySequence = seq(CDV+3, ncol(historicalData), by = 365)
   FiveDaySequence = seq(CDV+4, ncol(historicalData), by = 365)
-  FiveDayAverage = c(OneDaySequence, TwoDaySequence, ThreeDaySequence, FourDaySequence, FiveDaySequence)
   
-  FiveDayAverage = historicalData[FiveDayAverage]
-  FiveDayAverage = data.matrix(FiveDayAverage)
-  FiveDayMean = mean(FiveDayAverage)
-  FiveDayMedian = median(FiveDayAverage)
-  FiveDaySTD = sd(FiveDayAverage)
+  OneDaySequence = historicalData[OneDaySequence]
+  OneDaySequence = data.matrix(OneDaySequence)
+  TwoDaySequence = historicalData[TwoDaySequence]
+  TwoDaySequence = data.matrix(TwoDaySequence)
+  ThreeDaySequence = historicalData[ThreeDaySequence]
+  ThreeDaySequence = data.matrix(ThreeDaySequence)
+  FourDaySequence = historicalData[FourDaySequence]
+  FourDaySequence = data.matrix(FourDaySequence)
+  FiveDaySequence = historicalData[FiveDaySequence]
+  FiveDaySequence = data.matrix(FiveDaySequence)
+  
+  df.5Day = data.frame()
+  for (k in 1:41) {
+    FiveDayAverage = sum(OneDaySequence[k],TwoDaySequence[k],ThreeDaySequence[k],FourDaySequence[k],FiveDaySequence[k])
+    df.Temp5 = data.frame('FiveDayTemp' = FiveDayAverage)
+    df.5Day = rbind(df.5Day,df.Temp5)
+  }
+  df.5Day = data.matrix(df.5Day)
+  FiveDayMean = mean(df.5Day)
+  FiveDayMedian = median(df.5Day)
+  FiveDaySTD = sd(df.5Day)
+  FiveDayPlus = FiveDayMean + FiveDaySTD
+  FiveDayMinus = FiveDayMean - FiveDaySTD
   
   #------------------------------------------------------------------------------------------------------------------
   #Ten Day Statistics
@@ -188,13 +205,31 @@ for (i in 1:length(cLonCoord)) {
   EightDaySequence = seq(CDV+7, ncol(historicalData), by = 365)
   NineDaySequence = seq(CDV+8, ncol(historicalData), by = 365)
   TenDaySequence = seq(CDV+9, ncol(historicalData), by = 365)
-  TenDayAverage = c(FiveDayAverage, SixDaySequence, SevenDaySequence, EightDaySequence, NineDaySequence, TenDaySequence)
   
-  TenDayAverage = historicalData[TenDayAverage]
-  TenDayAverage = data.matrix(TenDayAverage)
-  TenDayMean = mean(TenDayAverage)
-  TenDayMedian = median(TenDayAverage)
-  TenDaySTD = sd(TenDayAverage)
+  SixDaySequence = historicalData[SixDaySequence]
+  SixDaySequence = data.matrix(SixDaySequence)
+  SevenDaySequence = historicalData[SevenDaySequence]
+  SevenDaySequence = data.matrix(SevenDaySequence)
+  EightDaySequence = historicalData[EightDaySequence]
+  EightDaySequence = data.matrix(ThreeDaySequence)
+  NineDaySequence = historicalData[NineDaySequence]
+  NineDaySequence = data.matrix(NineDaySequence)
+  TenDaySequence = historicalData[TenDaySequence]
+  TenDaySequence = data.matrix(TenDaySequence)
+  
+  df.10Day = data.frame()
+  for (k in 1:41) {
+    TenDayAverage = sum(OneDaySequence[k],TwoDaySequence[k],ThreeDaySequence[k],FourDaySequence[k],FiveDaySequence[k],
+                        SixDaySequence[k],SevenDaySequence[k],EightDaySequence[k],NineDaySequence[k],TenDaySequence[k])
+    df.Temp10 = data.frame('TenDayTemp' = TenDayAverage)
+    df.10Day = rbind(df.10Day,df.Temp10)
+  }
+  df.10Day = data.matrix(df.10Day)
+  TenDayMean = mean(df.10Day)
+  TenDayMedian = median(df.10Day)
+  TenDaySTD = sd(df.10Day)
+  TenDayPlus = TenDayMean + TenDaySTD
+  TenDayMinus = TenDayMean - TenDaySTD
   
   #------------------------------------------------------------------------------------------------------------------
   #Fifteen Day Statistics
@@ -205,18 +240,39 @@ for (i in 1:length(cLonCoord)) {
   ThirteenDaySequence = seq(CDV+12, ncol(historicalData), by = 365)
   FourteenDaySequence = seq(CDV+13, ncol(historicalData), by = 365)
   FifteenDaySequence = seq(CDV+14, ncol(historicalData), by = 365)
-  FifteenDayAverage = c(TenDayAverage, ElevenDaySequence, TwelveDaySequence, ThirteenDaySequence, FourteenDaySequence, FifteenDaySequence)
+
+  ElevenDaySequence = historicalData[ElevenDaySequence]
+  ElevenDaySequence = data.matrix(ElevenDaySequence)
+  TwelveDaySequence = historicalData[TwelveDaySequence]
+  TwelveDaySequence = data.matrix(TwelveDaySequence)
+  ThirteenDaySequence = historicalData[ThirteenDaySequence]
+  ThirteenDaySequence = data.matrix(ThirteenDaySequence)
+  FourteenDaySequence = historicalData[FourteenDaySequence]
+  FourteenDaySequence = data.matrix(FourteenDaySequence)
+  FifteenDaySequence = historicalData[FifteenDaySequence]
+  FifteenDaySequence = data.matrix(FifteenDaySequence)
   
-  FifteenDayAverage = historicalData[FifteenDayAverage]
-  FifteenDayAverage = data.matrix(FifteenDayAverage)
-  FifteenDayMean = mean(FifteenDayAverage)
-  FifteenDayMedian = median(FifteenDayAverage)
-  FifteenDaySTD = sd(FifteenDayAverage)
+  df.15Day = data.frame()
+  for (k in 1:41) {
+    FifteenDayAverage = sum(OneDaySequence[k],TwoDaySequence[k],ThreeDaySequence[k],FourDaySequence[k],FiveDaySequence[k],
+                        SixDaySequence[k],SevenDaySequence[k],EightDaySequence[k],NineDaySequence[k],TenDaySequence[k],
+                        ElevenDaySequence[k],TwelveDaySequence[k],ThirteenDaySequence[k],FourteenDaySequence[k],FifteenDaySequence[k])
+    df.Temp15 = data.frame('FifteenDayTemp' = FifteenDayAverage)
+    df.15Day = rbind(df.15Day,df.Temp15)
+  }
+  df.15Day = data.matrix(df.15Day)
+  FifteenDayMean = mean(df.15Day)
+  FifteenDayMedian = median(df.15Day)
+  FifteenDaySTD = sd(df.15Day)
+  FifteenDayPlus = FifteenDayMean + FifteenDaySTD
+  FifteenDayMinus = FifteenDayMean - FifteenDaySTD
   
   df1 = data.frame('Community'=community[i],'FiveDayMean'=FiveDayMean,'FiveDayMedian'=FiveDayMedian,
-                        'FiveDaySTD'=FiveDaySTD,'TenDayMean'=TenDayMean,'TenDayMedian'=TenDayMedian,
-                        'TenDaySTD'=TenDaySTD,'FifteenDayMean'=FifteenDayMean,'FifteenDayMedian'=FifteenDayMedian,
-                        'FifteenDaySTD'=FifteenDaySTD)
+                   'FiveDaySTD'=FiveDaySTD,'FiveDayPlus' =FiveDayPlus, 'FiveDayMinus' = FiveDayMinus,
+                   'TenDayMean'=TenDayMean,'TenDayMedian'=TenDayMedian, 'TenDaySTD'=TenDaySTD,
+                   'TenDayPlus' = TenDayPlus, 'TenDayMinus' = TenDayMinus, 'FifteenDayMean'=FifteenDayMean,
+                   'FifteenDayMedian'=FifteenDayMedian, 'FifteenDaySTD'=FifteenDaySTD, 
+                   'FifteenDayPlus' = FifteenDayPlus, 'FifteenDayMinus' = FifteenDayMinus)
   df.stats = rbind(df.stats,df1)
 }
 #------------------------------------------------------------------------------------------------------------------
