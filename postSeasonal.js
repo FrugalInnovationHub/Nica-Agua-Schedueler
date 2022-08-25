@@ -19,7 +19,7 @@ class seasonalForecast {
     this.wet = e[`probWet${quarter}`];
     this.dry = e[`probDry${quarter}`];
     this.startDate = moment(new Date())
-      .add((quarter - 1) * 3, "months")
+      .add((quarter - 1), "months")
       .format("YYYY-MM-DD");
     this.endDate = moment(new Date())
       .add(quarter * 3, "months")
