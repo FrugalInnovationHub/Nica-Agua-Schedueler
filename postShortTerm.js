@@ -4,7 +4,7 @@ const moment = require("moment");
 var request = require("request");
 const filelog = require("./fileLog");
 const login = require("./apiLogin");
-const url = "https://localhost:3000";
+const url = "https://api.nicaagua.net";
 // Reading our test file
 
 /**Class that describes the Seasonal Forecast object */
@@ -72,7 +72,5 @@ function putShortTermForecasts() {
     });
   });
 }
-
-putShortTermForecasts();
 
 module.exports = putShortTermForecasts;
