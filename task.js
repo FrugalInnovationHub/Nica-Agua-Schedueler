@@ -7,7 +7,9 @@ const filelog = require("./fileLog");
 downloadFtp().then(() => {
   downloadZip().then(() => {
     runRScript().then((e) => {
-      putLongTermForecasts();
+      putLongTermForecasts().then((e)=>{
+        putShortTermForecasts();
+      });
     });
   });
 });
