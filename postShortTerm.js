@@ -16,15 +16,15 @@ class shortTermForecast {
    */
   constructor(e, quarter) {
     this.community = e["Community"];
-    this.fiveDays = e["FiveDayMean"];
-    this.fiveDaysMax = e["FiveDayPlus"];
-    this.fiveDaysMin = e["FiveDayMinus"];
-    this.tenDays = e[`TenDayMean`];
-    this.tenDaysMax = e[`TenDayPlus`];
-    this.tenDaysMin = e[`TenDayMinus`];
-    this.fifteenDays = e["FifteenDayMean"];
-    this.fifteenDaysMax = e["FifteenDayPlus"];
-    this.fifteenDaysMin = e["FifteenDayMinus"];
+    this.fiveDays = e["FiveDayForecast"];
+    this.fiveDaysMax = e["FiveDayMax"];
+    this.fiveDaysMin = e["FiveDayMin"];
+    this.tenDays = e[`TenDayForecast`];
+    this.tenDaysMax = e[`TenDayMax`];
+    this.tenDaysMin = e[`TenDayMin`];
+    this.fifteenDays = e["FifteenDayForecast"];
+    this.fifteenDaysMax = e["FifteenDayMax"];
+    this.fifteenDaysMin = e["FifteenDayMin"];
     
   }
 }
