@@ -1,12 +1,10 @@
-# **Modify for your System**
 setwd("./Data") ## Modify for your system
 # library(terra)
 # library(writexl)
 if (!require("writexl")) install.packages("writexl")
 if (!require("terra")) install.packages('terra', repos='https://rspatial.r-universe.dev')
-
 #------------------------------------------------------------------------------------------------------------------
-# Community Data
+#Community Data
 cLonCoord = c(-86.2621555581,-86.27143686,-86.28678731,-86.283059370199993,
               -86.262830071300002,-86.25762432180,-86.231451938800006,
               -86.238579086900003,-86.2428543454,-86.220968346,
@@ -21,7 +19,7 @@ community = c('El Bramadero','Daraili','La Laguna','San Andres','Las Limas',
               'El Naranjo','Los Planes','El Robledalito','Varonesa',
               'La Palmera')
 #------------------------------------------------------------------------------------------------------------------
-r = terra::rast('./IRI_prob_fcst_lead_1.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('IRI_prob_fcst_lead_1.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
@@ -40,7 +38,7 @@ for (i in 1:length(cLonCoord)) {
   df.seasA = rbind(df.seasA,dfA)
 }
 #------------------------------------------------------------------------------------------------------------------
-r = terra::rast('./IRI_prob_fcst_lead_2.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('IRI_prob_fcst_lead_2.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
@@ -59,7 +57,7 @@ for (i in 1:length(cLonCoord)) {
   df.seasB = rbind(df.seasB,dfB)
 }
 #------------------------------------------------------------------------------------------------------------------
-r = terra::rast('./IRI_prob_fcst_lead_3.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('IRI_prob_fcst_lead_3.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
@@ -78,7 +76,7 @@ for (i in 1:length(cLonCoord)) {
   df.seasC = rbind(df.seasC,dfC)
 }
 #---------------------------------------------------------------------------------------
-r = terra::rast('./IRI_prob_fcst_lead_4.nc') # AUTO DOWNLOAD HERE
+r = terra::rast('IRI_prob_fcst_lead_4.nc') # AUTO DOWNLOAD HERE
 
 crsdef = "+proj=longlat +datum=WGS84"
 crs(r) = crsdef
@@ -104,7 +102,7 @@ for (i in 1:length(cLonCoord)) {
 #------------------------------------------------------------------------------------------------------------------
   #5 Day
   # Load file 1 using terra::rast and plot contents
-  r5 = terra::rast('./5 day.tif') # AUTO DOWNLOAD HERE
+  r5 = terra::rast('5 Day.tif') # AUTO DOWNLOAD HERE
   # Use defined projection for lon/lat coordinates
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r5) = crsdef
@@ -112,10 +110,11 @@ for (i in 1:length(cLonCoord)) {
   location5 = vect(lonLatCity, crs = "+proj=longlat +datum=WGS84")
   precipitationMatrix5 = terra::extract(r5, location5, method = 'bilinear') 
   precipitation5 = subset(precipitationMatrix5, select = -ID)
+  precipitation5 = as.numeric(precipitation5)
   #------------------------------------------------------------------------------------------------------------------
   #10 Day
   # Load file 2 using terra::rast and plot contents
-  r10 = terra::rast('./10 day.tif') # AUTO DOWNLOAD HERE
+  r10 = terra::rast('10 Day.tif') # AUTO DOWNLOAD HERE
   # Use defined projection for lon/lat coordinates
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r10) = crsdef
@@ -123,10 +122,11 @@ for (i in 1:length(cLonCoord)) {
   location10 = vect(lonLatCity, crs = "+proj=longlat +datum=WGS84")
   precipitationMatrix10 = terra::extract(r10, location10, method = 'bilinear') 
   precipitation10 = subset(precipitationMatrix10, select = -ID)
+  precipitation10 = as.numeric(precipitation10)
   #------------------------------------------------------------------------------------------------------------------
   #15 Day
   # Load file 3 using terra::rast and plot contents
-  r15 = terra::rast('./15 day.tif') #AUTO DOWNLOAD HERE
+  r15 = terra::rast('15 Day.tif') #AUTO DOWNLOAD HERE
   # Use defined projection for lon/lat coordinates
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r15) = crsdef
@@ -134,13 +134,14 @@ for (i in 1:length(cLonCoord)) {
   location15 = vect(lonLatCity, crs = "+proj=longlat +datum=WGS84")
   precipitationMatrix15 = terra::extract(r15, location15, method = 'bilinear')
   precipitation15 = subset(precipitationMatrix15, select = -ID)
+  precipitation15 = as.numeric(precipitation15)
   #------------------------------------------------------------------------------------------------------------------
   allForecasts = cbind(precipitation5,precipitation10,precipitation15)
   allForecasts = t(allForecasts)
   allForecasts = data.frame(Days = (5*c(1:3)), X = (allForecasts))
   colnames(allForecasts) = c('# Days','rainfall mm') 
   #------------------------------------------------------------------------------------------------------------------
-  r = terra::rast('./Historical.nc') # AUTO DOWNLOAD HERE
+  r = terra::rast('Historical.nc') # AUTO DOWNLOAD HERE
   #------------------------------------------------------------------------------------------------------------------
   crsdef = "+proj=longlat +datum=WGS84"
   crs(r) = crsdef
@@ -190,11 +191,8 @@ for (i in 1:length(cLonCoord)) {
     df.5Day = rbind(df.5Day,df.Temp5)
   }
   df.5Day = data.matrix(df.5Day)
-  FiveDayMean = mean(df.5Day)
-  FiveDayMedian = median(df.5Day)
-  FiveDaySTD = sd(df.5Day)
-  FiveDayPlus = FiveDayMean + FiveDaySTD
-  FiveDayMinus = FiveDayMean - FiveDaySTD
+  FiveDay25 = quantile(df.5Day, prob=c(.25))
+  FiveDay75 = quantile(df.5Day, prob=c(.75))
   
   #------------------------------------------------------------------------------------------------------------------
   #Ten Day Statistics
@@ -225,11 +223,8 @@ for (i in 1:length(cLonCoord)) {
     df.10Day = rbind(df.10Day,df.Temp10)
   }
   df.10Day = data.matrix(df.10Day)
-  TenDayMean = mean(df.10Day)
-  TenDayMedian = median(df.10Day)
-  TenDaySTD = sd(df.10Day)
-  TenDayPlus = TenDayMean + TenDaySTD
-  TenDayMinus = TenDayMean - TenDaySTD
+  TenDay25 = quantile(df.10Day, prob=c(.25))
+  TenDay75 = quantile(df.10Day, prob=c(.75))
   
   #------------------------------------------------------------------------------------------------------------------
   #Fifteen Day Statistics
@@ -261,20 +256,17 @@ for (i in 1:length(cLonCoord)) {
     df.15Day = rbind(df.15Day,df.Temp15)
   }
   df.15Day = data.matrix(df.15Day)
-  FifteenDayMean = mean(df.15Day)
-  FifteenDayMedian = median(df.15Day)
-  FifteenDaySTD = sd(df.15Day)
-  FifteenDayPlus = FifteenDayMean + FifteenDaySTD
-  FifteenDayMinus = FifteenDayMean - FifteenDaySTD
-  
-  df1 = data.frame('Community'=community[i],'FiveDayMean'=FiveDayMean,'FiveDayMedian'=FiveDayMedian,
-                   'FiveDaySTD'=FiveDaySTD,'FiveDayPlus' =FiveDayPlus, 'FiveDayMinus' = FiveDayMinus,
-                   'TenDayMean'=TenDayMean,'TenDayMedian'=TenDayMedian, 'TenDaySTD'=TenDaySTD,
-                   'TenDayPlus' = TenDayPlus, 'TenDayMinus' = TenDayMinus, 'FifteenDayMean'=FifteenDayMean,
-                   'FifteenDayMedian'=FifteenDayMedian, 'FifteenDaySTD'=FifteenDaySTD, 
-                   'FifteenDayPlus' = FifteenDayPlus, 'FifteenDayMinus' = FifteenDayMinus)
+  FifteenDay25 = quantile(df.15Day, prob=c(.25))
+  FifteenDay75 = quantile(df.15Day, prob=c(.75))
+  #------------------------------------------------------------------------------------------------------------------
+  #Final Organization
+  df1 = data.frame('Community'=community[i], 'FiveDayForecast'=precipitation5,'FiveDayMin'=FiveDay25,
+                   'FiveDayMax'=FiveDay75, 'TenDayForecast'=precipitation10, 'TenDayMin' =TenDay25,
+                   'TenDayMax'=TenDay75, 'FifteenDayForecast'=precipitation15, 'FifteenDayMin'=FifteenDay25,
+                   'FifteenDayMax'=FifteenDay75)
   df.stats = rbind(df.stats,df1)
 }
+df.stats[df.stats < 0] = 0 #Shouldn't be necessary, but added just in case
 #------------------------------------------------------------------------------------------------------------------
 write_xlsx(df.seasTotal,"./seasonal.xlsx") ## Modify for your system
 write_xlsx(df.stats,"./stats.xlsx") ## Modify for your system
