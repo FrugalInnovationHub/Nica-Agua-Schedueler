@@ -22,7 +22,7 @@ class seasonalForecast {
       .add(quarter - 1, "months")
       .format("YYYY-MM-DD");
     this.endDate = moment(new Date())
-      .add(quarter * 3, "months")
+      .add(quarter + 2, "months")
       .format("YYYY-MM-DD");
   }
 }
@@ -37,9 +37,7 @@ function readSpreadSheet() {
       const temp = reader.utils.sheet_to_json(file.Sheets[file.SheetNames[i]]);
       data = temp.map((res) => res);
     }
-    data = data
-      .map((e) => [1, 2, 3, 4].map((i) => new seasonalForecast(e, i)))
-      .flat(1);
+    data = data.map((e) => [1, 2, 3, 4].map((i) => new seasonalForecast(e, i))).flat(1);
     resolve(JSON.stringify({ forecasts: data }));
   });
 }
