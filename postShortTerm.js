@@ -45,12 +45,13 @@ function readSpreadSheet() {
 }
 
 function putShortTermForecasts() {
+  filelog("API","START SHORT TERM FORECAST")
   process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
   return new Promise((resolve, reject) => {
-    return readSpreadSheet().then((data) => {
+    readSpreadSheet().then((data) => {
       login()
         .then((token) => {
-          filelog("API", "PUTING DATA");
+          filelog("API", "PUTING DATA SHORT TERM");
           var options = {
             method: "PUT",
             url: `${url}/shortTerm`,

@@ -4,7 +4,7 @@ const moment = require("moment");
 var request = require("request");
 const filelog = require("./fileLog");
 const login = require("./apiLogin");
-const url = "https://api.nicaagua.net"
+const url = "https://api.nicaagua.net";
 // Reading our test file
 
 /**Class that describes the Seasonal Forecast object */
@@ -19,7 +19,7 @@ class seasonalForecast {
     this.wet = e[`probWet${quarter}`];
     this.dry = e[`probDry${quarter}`];
     this.startDate = moment(new Date())
-      .add((quarter - 1), "months")
+      .add(quarter - 1, "months")
       .format("YYYY-MM-DD");
     this.endDate = moment(new Date())
       .add(quarter * 3, "months")
@@ -45,31 +45,32 @@ function readSpreadSheet() {
 }
 
 function putLongTermForecasts() {
+  filelog("API","START SEASONAL FORECAST")
   return new Promise((resolve, reject) => {
     return readSpreadSheet().then((data) => {
-      login().then((token) => {
-        filelog("API", "PUTING DATA");
-        var options = {
-          method: "PUT",
-          url: `${url}/longTerm`,
-          body: data,
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        };
-        request(options, function (error, response) {
-          if (error) reject(error);
-          filelog("API", "SUCCESS");
-          resolve();
+      login()
+        .then((token) => {
+          filelog("API", "PUTING DATA");
+          var options = {
+            method: "PUT",
+            url: `${url}/longTerm`,
+            body: data,
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+          };
+          request(options, function (error, response) {
+            if (error) reject(error);
+            filelog("API","FINISH SEASONAL FORECAST")
+            resolve();
+          });
+        })
+        .catch((e) => {
+          filelog("API", "LOGIN ERROR");
         });
-      }).catch((e) => {
-        filelog("API", "LOGIN ERROR");
-      });
     });
   });
 }
-
-putLongTermForecasts();
 
 module.exports = putLongTermForecasts;
