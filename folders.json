@@ -4,15 +4,15 @@
     "files": [
       {
         "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean",
-        "destination": "Data/5 day.tif"
+        "destination": "Data/5 Day.tif"
       },
       {
         "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean",
-        "destination": "Data/10 day.tif"
+        "destination": "Data/10 Day.tif"
       },
       {
         "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean",
-        "destination": "Data/15 day.tif"
+        "destination": "Data/15 Day.tif"
       }
     ]
   },
