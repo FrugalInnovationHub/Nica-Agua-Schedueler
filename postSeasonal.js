@@ -18,6 +18,7 @@ class seasonalForecast {
     this.community = e["Community"];
     this.wet = e[`probWet${quarter}`];
     this.dry = e[`probDry${quarter}`];
+    this.text = e[`LT${quarter}${quarter+2}`];
     this.startDate = moment(new Date())
       .add(quarter - 1, "months")
       .format("YYYY-MM-DD");
