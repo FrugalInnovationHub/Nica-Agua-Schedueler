@@ -1,77 +1,60 @@
-// Requiring the module
 const reader = require("xlsx");
-const moment = require("moment");
-var request = require("request");
-const filelog = require("./fileLog");
-const login = require("./apiLogin");
-const url = "https://api.nicaagua.net";
-// Reading our test file
+const request = require("request");
+const logActivity = require("./fileLog");
+const apiLogin = require("./apiLogin");
+const apiUrl = "https://api.nicaagua.net";
 
-/**Class that describes the Seasonal Forecast object */
-class shortTermForecast {
-  /**
-   * Construct a Seasonal forecast based on the lines in the spreadsheet
-   * @param {*} e Line in the spreadsheet
-   * @param {*} quarter Number of quarters to skip (1 to 4)
-   */
-  constructor(e, quarter) {
-    this.community = e["Community"];
-    this.fiveDays = e["FiveDayForecast"];
-    this.fiveDaysMax = e["FiveDayMax"];
-    this.fiveDaysMin = e["FiveDayMin"];
-    this.tenDays = e[`TenDayForecast`];
-    this.tenDaysMax = e[`TenDayMax`];
-    this.tenDaysMin = e[`TenDayMin`];
-    this.fifteenDays = e["FifteenDayForecast"];
-    this.fifteenDaysMax = e["FifteenDayMax"];
-    this.fifteenDaysMin = e["FifteenDayMin"];
-    
+class ShortTermForecast {
+  constructor(data) {
+    this.community = data["Community"];
+    this.fiveDays = data["FiveDayForecast"];
+    this.fiveDaysMax = data["FiveDayMax"];
+    this.fiveDaysMin = data["FiveDayMin"];
+    this.tenDays = data["TenDayForecast"];
+    this.tenDaysMax = data["TenDayMax"];
+    this.tenDaysMin = data["TenDayMin"];
+    this.fifteenDays = data["FifteenDayForecast"];
+    this.fifteenDaysMax = data["FifteenDayMax"];
+    this.fifteenDaysMin = data["FifteenDayMin"];
   }
 }
 
-function readSpreadSheet() {
-  return new Promise((resolve, reject) => {
-    filelog("EXCELL", "READING FILES");
-    const file = reader.readFile("./Data/stats.xlsx");
-    var data = [];
-    const sheets = file.SheetNames;
-    for (let i = 0; i < sheets.length; i++) {
-      const temp = reader.utils.sheet_to_json(file.Sheets[file.SheetNames[i]]);
-      data = temp.map((res) => res);
-    }
-    data = data.map((e) => new shortTermForecast(e));
-    resolve(JSON.stringify({forecasts:data}));
-  });
+const readSpreadSheet = async () => {
+  logActivity("EXCEL", "READING FILES");
+  const file = reader.readFile("./Data/stats.xlsx");
+  let data = [];
+  const sheets = file.SheetNames;
+  for (let i = 0; i < sheets.length; i++) {
+    const temp = reader.utils.sheet_to_json(file.Sheets[file.SheetNames[i]]);
+    data = temp.map((res) => new ShortTermForecast(res));
+  }
+  return JSON.stringify({forecasts: data});
 }
 
-function putShortTermForecasts() {
-  filelog("API","START SHORT TERM FORECAST")
+const putShortTermForecasts = async () => {
+  logActivity("API", "START SHORT TERM FORECAST");
   process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
-  return new Promise((resolve, reject) => {
-    readSpreadSheet().then((data) => {
-      login()
-        .then((token) => {
-          filelog("API", "PUTING DATA SHORT TERM");
-          var options = {
-            method: "PUT",
-            url: `${url}/shortTerm`,
-            body: data,
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token}`,
-            },
-          };
-          request(options, function (error, response) {
-            if (error) reject(error);
-            filelog("API", "SUCCESS");
-            resolve();
-          });
-        })
-        .catch((e) => {
-          filelog("API", "LOGIN ERROR");
-        });
+  try {
+    const data = await readSpreadSheet();
+    const token = await apiLogin();
+    logActivity("API", "PUTTING DATA SHORT TERM");
+    const options = {
+      method: "PUT",
+      url: `${apiUrl}/shortTerm`,
+      body: data,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    request(options, (error, response) => {
+      if (error) throw error;
+      logActivity("API", "SUCCESS");
     });
-  });
+  } catch (error) {
+    logActivity("API", "ERROR");
+    console.error(`Error: ${error}`);
+  }
 }
 
 module.exports = putShortTermForecasts;

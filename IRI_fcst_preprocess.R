@@ -11,6 +11,9 @@
 #http://iridl.ldeo.columbia.edu/maproom/Global/Forecasts/NMME_Seasonal_Forecasts/Precipitation_ELR.html
 #and used for checking output.
 
+# TODO: STORE FILES IN RIGHT LOCATION
+setwd("./Data") ## Set for AWS
+
 #' Install packages if needed
 if (!require("ncdf4")) install.packages("ncdf4")
 if (!require("lubridate")) install.packages("lubridate")
@@ -41,11 +44,11 @@ seasons <- c("JFM","FMA","MAM","AMJ","MJJ","JJA","JAS","ASO","SON","OND","NDJ","
 # datadir <- file.path("Z:/projects/nicaragua/hydroclimate/seasonal_prediction/R-fcst")
 #datadir <- file.path("C:/Users/Ed/Documents/projects/hydroclimate/seasonal_prediction/data")
 
-datadir <- file.path("./Data")
-mf <- file.path(datadir, "raw_data.nc")
+mf <- file.path("raw_data.nc")
+# mf <- file.path(datadir, "")
 #check downloaded data file for size and download date
 
-
+# POTENTIAL ISSUE
 download_dt <- as.Date(file.info(mf)$mtime)
 if(download_dt < Sys.Date()) {
   ndays = length(seq(from = download_dt, to = Sys.Date(), by = "day"))
@@ -56,6 +59,7 @@ if(download_dt < Sys.Date()) {
 if (file.info(mf)$size < 390000000 ) {
   stop("input file is too small to have valid seasonal forecast data")
 }
+# POTENTIAL ISSUE ENDS
 
 #open file
 nc <- nc_open(mf)
