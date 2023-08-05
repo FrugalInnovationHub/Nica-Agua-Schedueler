@@ -17,7 +17,7 @@ function login() {
       request(options, function (error, response) {
         if(response.statusCode != 200 || error)
           reject("error");
-        else{
+        else {
           filelog("API", "LOGIN SUCCESS");
           resolve(response.body);
         }
