@@ -1,10 +1,11 @@
 const fs = require('fs');
 const https = require('https');
 const logActivity = require('./fileLog');
+const ftpConfig = require("./folders.json");
 
-const key = "733039b0e02ed5acf2d45931d7b7810daa8b90f5d2cc6981ffe381ece6ca757bfcf27c92e817f0a4d5ba3005be5f1ea3cd1e654e";
-const url = new URL("https://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.NMME_Seasonal_Forecast/.Precipitation_ELR/.prob/data.nc");
-const rawFile = "./Data/raw_data.nc";
+const key = ftpConfig.iri.key;
+const url = new URL(ftpConfig.iri.source);
+const rawFile = ftpConfig.iri.destination;
 
 const downloadFile = () => {
     return new Promise((resolve, reject) => {
