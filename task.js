@@ -9,7 +9,7 @@ const logActivity = require("./fileLog");
 async function main() {
     try {
         await downloadFtp();
-        await downloadZip();
+        // await downloadZip(); // Error Downloading Zip
         await downloadIri();
         await runRScript();
         await putLongTermForecasts();
