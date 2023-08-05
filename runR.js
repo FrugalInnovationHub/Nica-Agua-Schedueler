@@ -24,10 +24,12 @@ const executeRScript = async (scriptName) => {
 }
 
 const runRScript = async () => {
-  const scriptName = "Rscript4.R";
+  const preScriptName = "IRI_fcst_preprocess.R";
+  const scriptName1 = "Rscript4.R";
 
   try {
-    const result = await executeRScript(scriptName);
+    const preResult = await executeRScript(preScriptName);
+    const result = await executeRScript(scriptName1);
     console.log(result);
   } catch (error) {
     console.error(`Error: ${error}`);
