@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node scheduele.js"
+  },
   "dependencies": {
     "cron": "^2.0.0",
     "ftp": "^0.3.10",
