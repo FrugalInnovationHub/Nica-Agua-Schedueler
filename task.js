@@ -6,6 +6,7 @@ const putLongTermForecasts = require("./postSeasonal");
 const putShortTermForecasts = require("./postShortTerm");
 const logActivity = require("./fileLog");
 const fileLog = require("./fileLog");
+const { exec } = require('child_process');
 
 async function main() {
     fileLog("TASK","Starting Task")
@@ -17,6 +18,8 @@ async function main() {
         await putLongTermForecasts();
         await putShortTermForecasts();
         logActivity("DONE", "All tasks completed");
+        logActivity("SHUTTING DOWN", "Shutting this machine down.");
+        exec("sudo shutdown now -h");
     } catch (error) {
         logActivity("ERROR", `Task failed: ${error}`);
     }
