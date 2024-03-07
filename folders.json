@@ -4,20 +4,25 @@
     "files": [
       {
         "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/05day/precip_mean",
-        "destination": "Data/5 day.tif"
+        "destination": "Data/5 Day.tif"
       },
       {
         "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/10day/precip_mean",
-        "destination": "Data/10 day.tif"
+        "destination": "Data/10 Day.tif"
       },
       {
         "source": "pub/org/chc/products/EWX/data/forecasts/CHIRPS-GEFS_precip_v12/15day/precip_mean",
-        "destination": "Data/15 day.tif"
+        "destination": "Data/15 Day.tif"
       }
     ]
   },
   "longTerm": {
     "source": "http://hydro.engr.scu.edu/files/nicaragua/data/chirps/chirps-v2.0.1981-2021.smaller.daily.nc.gz",
-    "destination": "Data/raw_data.nc.gz"
+    "destination": "Data/Historical.nc.gz"
+  },
+  "iri": {
+    "source": "https://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.NMME_Seasonal_Forecast/.Precipitation_ELR/.prob/data.nc",
+    "destination": "./Data/raw_data.nc",
+    "key": "733039b0e02ed5acf2d45931d7b7810daa8b90f5d2cc6981ffe381ece6ca757bfcf27c92e817f0a4d5ba3005be5f1ea3cd1e654e"
   }
 }

@@ -14,6 +14,8 @@ auth="__dlauth_id=${key}"
 #raw link is 
 #https://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.NMME_Seasonal_Forecast/.Precipitation_ELR/.prob/data.nc
 
+# TODO: place the file in the correct folder
+
 #remove old raw data if necessary
 rawfile="raw_data.nc"
 [[ -f $rawfile ]] && rm -f "$rawfile"
