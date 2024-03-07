@@ -25,4 +25,9 @@ async function main() {
     }
 }
 
-main();
+
+fileLog("GIT","Fetching the latest version from github.");
+exec("git pull",(err) => {
+    fileLog("GIT","Fetching the latest version from github.");
+    main();
+});
